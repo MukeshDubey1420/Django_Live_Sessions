@@ -61,15 +61,15 @@ from django.shortcuts import render     # To render to a template ..
 
 def Homepage(request):      # Request response ..
     context = {
-
-        "title":"hello world",
+        "title":"We Welcomes You to our Web Live session..",
+        "Name": "Mukesh Dubey"
     }
 
     return render(request, "homeview.html" , context)
 
-def MukeshPage(request):      # Request response ..
+def ContactPage(request):      # Request response ..
     return render(request, "homeview.html" , {})
 
-def GauravPage(request):      # Request response ..
+def SamplePage(request):      # Request response ..
     return render(request, "homeview.html" , {})
 

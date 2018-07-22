@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 
-from .views import Homepage
+from .views import Homepage,ContactPage,SamplePage
 
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
     url(r'^$',Homepage),
+    url(r'^contact',ContactPage),
+    url(r'^sample',SamplePage),
     # path('admin/', admin.site.urls),
 ]
